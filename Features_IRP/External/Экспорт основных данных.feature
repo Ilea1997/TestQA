@@ -96,6 +96,16 @@
 
 
 
+	И я проверяю или создаю для плана видов характеристик "AddAttributeAndProperty" объекты:
+		| 'Ref'                                                                                                | 'DeletionMark' | 'Parent' | 'IsFolder' | 'Icon'                                  | 'isIconSet' | 'Description_en'          | 'Description_hash' | 'Description_ru' | 'Description_tr' | 'UniqueID'                          |
+		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb766bf96b275d' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Бренд'                   | ''                 | ''               | ''               | '_4355827b63dc41b8b540f65790e07f5d' |
+		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6877' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Цвет'                    | ''                 | ''               | ''               | '_453185245f214e42a64fd25b1daf8614' |
+		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6872' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Размер'                  | ''                 | ''               | ''               | '_aa59a52a77bd48d5af340a2ff98411a9' |
+		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb766bf96b275f' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Подтверждение получения' | ''                 | ''               | ''               | '_c99927290ef04979822d1988903da1de' |
+
+
+
+
 	И я проверяю или создаю для справочника "AddAttributeAndPropertyValues" объекты:
 		| 'Ref'                                                                                   | 'DeletionMark' | 'Owner'                                                                                              | 'Code' | 'AdditionalID' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' | 'UniqueID'                          |
 		| 'e1cib/data/Catalog.AddAttributeAndPropertyValues?ref=b762b13668d0905011eb76684b9f6873' | 'False'        | 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6872' | 1      | ''             | 'S'              | ''                 | ''               | ''               | '_549a76a8e7e94706a4422ff3e930eef3' |
@@ -224,10 +234,10 @@
 
 
 
-	И я проверяю или создаю для справочника "Users" объекты:
-		| 'Ref'                                                           | 'DeletionMark' | 'Code' | 'Description' | 'InfobaseUserID'                       | 'Partner' | 'LocalizationCode' | 'ShowInList' | 'UserGroup'                                                          | 'InterfaceLocalizationCode' | 'FormScaleVariant' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' |
-		| 'e1cib/data/Catalog.Users?ref=b762b13668d0905011eb766bf96b2777' | 'False'        | 1      | 'Админ'       | '0d1a0eef-ac2d-4087-b83d-d967584494cc' | ''        | 'en'               | 'False'      | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'en'                        | ''                 | 'Админ'          | ''                 | ''               | ''               |
-		| 'e1cib/data/Catalog.Users?ref=aa7f120ed92fbced11eb13d7279770c0' | 'False'        | 2      | 'CI'          | 'd8339fad-aa7c-4c28-9755-547bc50e2083' | ''        | 'en'               | 'True'       | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'ru'                        | ''                 | 'CI'             | ''                 | ''               | ''               |
+//	И я проверяю или создаю для справочника "Users" объекты:
+//		| 'Ref'                                                           | 'DeletionMark' | 'Code' | 'Description' | 'InfobaseUserID'                       | 'Partner' | 'LocalizationCode' | 'ShowInList' | 'UserGroup'                                                          | 'InterfaceLocalizationCode' | 'FormScaleVariant' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' |
+//		| 'e1cib/data/Catalog.Users?ref=b762b13668d0905011eb766bf96b2777' | 'False'        | 1      | 'Админ'       | '0d1a0eef-ac2d-4087-b83d-d967584494cc' | ''        | 'en'               | 'False'      | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'en'                        | ''                 | 'Админ'          | ''                 | ''               | ''               |
+//		| 'e1cib/data/Catalog.Users?ref=aa7f120ed92fbced11eb13d7279770c0' | 'False'        | 2      | 'CI'          | 'd8339fad-aa7c-4c28-9755-547bc50e2083' | ''        | 'en'               | 'True'       | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'ru'                        | ''                 | 'CI'             | ''                 | ''               | ''               |
 
 
 
@@ -464,15 +474,6 @@
 		| 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?ref=b762b13668d0905011eb7663e35d796a' | 'False'        | 'e1cib/data/Catalog.Currencies?ref=b762b13668d0905011eb7663e35d795f' | 'e1cib/data/Catalog.IntegrationSettings?ref=b762b13668d0905011eb7663e35d7966' | 'Enum.CurrencyType.Legal'     | 'False'               | 'В локальной валюте страны' | ''                 | ''               | ''               |
 		| 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?ref=b762b13668d0905011eb7663e35d796b' | 'False'        | 'e1cib/data/Catalog.Currencies?ref=b762b13668d0905011eb7663e35d795e' | 'e1cib/data/Catalog.IntegrationSettings?ref=b762b13668d0905011eb7663e35d7966' | 'Enum.CurrencyType.Agreement' | 'False'               | 'Валюта соглашения, USD'    | ''                 | ''               | ''               |
 		| 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?refName=SettlementCurrency'           | 'False'        | ''                                                                   | ''                                                                            | ''                            | 'False'               | ''                          | ''                 | ''               | ''               |
-
-
-
-	И я проверяю или создаю для плана видов характеристик "AddAttributeAndProperty" объекты:
-		| 'Ref'                                                                                                | 'DeletionMark' | 'Parent' | 'IsFolder' | 'Icon'                                  | 'isIconSet' | 'Description_en'          | 'Description_hash' | 'Description_ru' | 'Description_tr' | 'UniqueID'                          |
-		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb766bf96b275d' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Бренд'                   | ''                 | ''               | ''               | '_4355827b63dc41b8b540f65790e07f5d' |
-		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6877' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Цвет'                    | ''                 | ''               | ''               | '_453185245f214e42a64fd25b1daf8614' |
-		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6872' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Размер'                  | ''                 | ''               | ''               | '_aa59a52a77bd48d5af340a2ff98411a9' |
-		| 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb766bf96b275f' | 'False'        | ''       | 'False'    | 'ValueStorage:AQEIAAAAAAAAAO+7v3siVSJ9' | 'False'     | 'Подтверждение получения' | ''                 | ''               | ''               | '_c99927290ef04979822d1988903da1de' |
 
 
 
