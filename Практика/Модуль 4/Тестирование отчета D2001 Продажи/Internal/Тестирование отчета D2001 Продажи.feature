@@ -27,4 +27,31 @@
 		И В командном интерфейсе я выбираю 'Отчеты' 'D2001 Продажи'
 		Тогда открылось окно 'D2001 Продажи'
 		И я нажимаю на кнопку с именем 'FormGenerate'
+	* Настройка отчета
+		* Открытие настроек отбора
+			И я нажимаю на кнопку с именем 'FormChangeVariant'
+			Тогда открылось окно 'Вариант "Default" отчета "D2001 Продажи"'
+		* Установка стандартных настроек
+			И в таблице "SettingsComposerSettings" я нажимаю на кнопку с именем 'SettingsComposerSettingsStandardSettings'
+			Тогда открылось окно '1С:Предприятие'
+			И я нажимаю на кнопку с именем 'Button0'			
+		* Установка колличества меньше 0
+			И я перехожу к закладке с именем "FilterPage"
+			И в таблице "SettingsComposerSettingsFilterFilterAvailableFields" я перехожу к строке:
+				| 'Доступные поля' |
+				| 'Количество'     |
+			И в таблице "SettingsComposerSettingsFilterFilterAvailableFields" я выбираю текущую строку
+			И в таблице "SettingsComposerSettingsFilter" я перехожу к строке:
+				| 'Поле'       |
+				| 'Количество' |
+			И в таблице "SettingsComposerSettingsFilter" я выбираю текущую строку
+			И в таблице "SettingsComposerSettingsFilter" из выпадающего списка с именем "SettingsComposerSettingsFilterComparisonType" я выбираю точное значение 'Меньше'
+			И в таблице "SettingsComposerSettingsFilter" в поле с именем 'SettingsComposerSettingsFilterRightValue' я ввожу текст '0,000'
+			И в таблице "SettingsComposerSettingsFilter" я завершаю редактирование строки
+			И я нажимаю на кнопку с именем 'FormEndEdit'
+			Тогда открылось окно 'D2001 Продажи'
+			И я нажимаю на кнопку с именем 'FormGenerate'
+	* Проверка отчета
+		Тогда Табличный документ "Result" равен макету "ИнформацияПоВозвратам" по шаблону
+				
 		
